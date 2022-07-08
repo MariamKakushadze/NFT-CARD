@@ -1,0 +1,165 @@
+:root {
+  --Soft-blue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+  --Main-dark-blue: hsl(217, 54%, 11%);
+  --Card-dark-blue: hsl(216, 50%, 16%);
+  --Line-dark-blue: hsl(215, 32%, 27%);
+  --White: hsl(0, 0%, 100%);
+}
+
+*{
+  box-sizing: border-box;
+ 
+}
+html {
+  font-size: 18px;
+  font-family: "Outfit", sans-serif;
+  background-color:var(--Main-dark-blue);
+}
+
+main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+       
+}
+.card{
+  margin:0 auto;
+  border-radius:15px;
+  max-width:350px;
+  background-color:var(--Card-dark-blue);  
+}
+.main-img{
+  display:block;
+  max-width:302px;
+  height:302px;
+  margin:24px 0 0 24px;
+  border-radius:8px;
+}
+.img-box{
+  position: relative;
+  width:100%;
+  max-width:302px;
+}
+.eye{
+  margin-left:24px;
+  position: absolute;
+  top: 0px;
+  bottom: 0;
+  left: 0px;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background: var(--Cyan);
+  mix-blend-mode: normal;
+  opacity: 0;
+  border-radius: 8px;
+  
+}
+
+.img-box:hover .eye{
+  opacity:0.5;
+  cursor:pointer;
+}
+
+.eye-img{
+  color:white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+h4{
+font-family: "Outfit", sans-serif;
+font-style: normal;
+font-weight: 600;
+font-size: 22px;
+line-height: 28px;
+color: var(--White);
+
+}
+.text-box{
+  margin-left:24px;
+  margin-top:-15px;
+}
+.main-text{
+font-family: "Outfit", sans-serif;
+font-style: normal;
+font-weight: 300;
+font-size: 18px;
+line-height: 26px;
+color: var(--Soft-blue);
+}
+.etherium-txt{
+font-family: "Outfit", sans-serif;
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 20px;
+color:var(--Cyan);
+margin-left:5px;
+}
+.etherium,
+.etherium-txt,
+.clock-logo,
+.clock-txt{
+  display:inline;
+}
+.clock-txt{
+font-family:"Outfit", sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+color: var(--Soft-blue);
+margin-left:5px;
+}
+.clock-logo{
+  margin-left:110px;
+}
+.inline-element{
+  display:flex;
+  text-align:center;
+  align-items:center;
+  margin-top:-10px;
+}
+.line{
+  border: 1px solid var(--Line-dark-blue);
+ 
+  max-width:302px;
+}
+.round{
+  max-width:33px;
+  border:1px solid white;
+  border-radius: 16px;
+}
+.round,
+.bottom-txt{
+  display:inline;
+}
+.bottom-el{
+  display:flex;
+  text-align:center;
+  align-items:center;
+}
+.bottom-txt{
+  margin-left:16px;
+  font-family: 'Outfit', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color:var(--Soft-blue);
+}
+.sp-txt{
+  color:white;
+}
+.sp-txt:hover,
+h4:hover{
+  cursor:pointer;
+  color:var(--Cyan);
+}
